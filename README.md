@@ -1,2 +1,2 @@
-# bmlindelwa.github.io
+# CS472
  
