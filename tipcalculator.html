@@ -7,11 +7,15 @@
 <script>
 function calcTip() {
 
-var value1 = document.getElementById('subtotal').value;
-var value2 = document.getElementById('tip').value;
-
-var total = parseInt(value1) + parseInt(value2)
-document.getElementById('total').innerHTML = '$'+total;
+    var value1 =  parseInt(document.getElementById('subtotal').value);
+    var value2 =  parseInt(document.getElementById('tip').value);
+    if(isNaN(value1) === true || isNaN(value2) === true || value1 === "" || value2 === ""){
+        alert("Invalid input!!");
+    }
+    else{
+        var total = value1 + (value1 * value2/100);
+        document.getElementById('total').innerHTML = '$'+total;
+    }
 }
 
 </script>
