@@ -7,10 +7,10 @@
 <script>
 function calcTip() {
 
-var value1 = document.getElementById('subtotal').value;
-var value2 = document.getElementById('tip').value;
+var value1 =  parseInt(document.getElementById('subtotal').value);
+var value2 =  valu1 * (parseInt(document.getElementById('tip').value)/100);
 
-var total = parseInt(value1) + parseInt(value2)
+var total = value1 + value2
 document.getElementById('total').innerHTML = '$'+total;
 }
 
