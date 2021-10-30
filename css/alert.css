@@ -1,0 +1,11 @@
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+button {
+    font-family: "Century Gothic",sans-serif;
+    font-size: 20pt;
+}
+div, button {
+    margin: 0 auto;
+}
