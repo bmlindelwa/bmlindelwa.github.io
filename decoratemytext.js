@@ -1,5 +1,13 @@
 
-window.onload = eventHandler;
+window.onload = eventsHandler;
+
+function eventsHandler(){
+    var btnEvent = document.getElementById('btn');
+    var chckBoxEvent = document.getElementById('bling');
+
+    btnEvent.onclick = myDeco;
+    chckBoxEvent.onchange = myBling;
+}
  
 function myDeco(){
     setInterval(function(){
@@ -8,15 +16,6 @@ function myDeco(){
         var currentSize = parseFloat(style);
         txt.style.fontSize = (currentSize + 2) + 'px';
     }, 500);
-   
-}
-
-function eventHandler(){
-    var evt = document.getElementById('btn');
-    var evt2 = document.getElementById('bling');
-
-    evt.onclick = myDeco;
-    evt2.onchange = myBling;
 }
 
 function myBling(){
