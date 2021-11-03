@@ -15,7 +15,9 @@ button{
 
 input{
     margin: 5px;
+    flex-direction: column;
 }
+
 
 .container{
     margin: 0 auto;
