@@ -175,7 +175,7 @@ with the following fields and methods:
 		}
 
   		return {
-    			setAge: setAge,
+    			age: setAge,
     			setSalary: setSalary,
     			setName: setName,
     			increaseSalary: increaseSalary,
